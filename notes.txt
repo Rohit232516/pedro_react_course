@@ -1,0 +1,30 @@
+when ever we try to make use inline styles in react we pass a styles prop to the tag and
+but inside the styles tage we need to pass the sytels in a object so 
+>>  we need to make a object {
+    styles:"enter color here"
+
+}
+>> whenver we use a property with '-' in between background-color we use backgroundColor
+>> wheever we use a a map over a array we just pass a callback with element and key we use then 
+>> then we set the key = {key}
+
+>> when we use a useState hook 
+>> when we can chage the value using the setState()-> function the react will be notified of the state change and it rerender the 
+>> whole ui
+>> whenever there is a onlick or someting which attributes or parentheses you need to pass it in a callback function 
+
+#Life Cycle of a componenet:
+>> mounting -> basically a componenet appering in the screen or starting exist in your project
+>> updating -> whatever the code in the component is changing
+>> unmounting -> components stop appering on the screen 
+
+#useEffect hook
+>> The useEffect hook wihtout the dependency array is called every time it is mounted,updated or basically whever the componenet is renderd
+>> with a empty dependency array it is only triggered when there is a real state change 
+>> calling a react function with the return statement we can call the code whenver it is unmounted
+
+>> the Strict mode in react is mainly for checking if your useEffect is working correctly 
+>> it mounts the componenet and unmounts it and mounts it again
+>> if we pass some state variable in the code it the use effect will be performed every time you there is change in the variable
+>> when we call an api outside of useEffect it is bad because it will be called infinitedly
+>> b'coz when we first mount the state of the variable is updated and then app() function is again called and it start a chain of reactions
